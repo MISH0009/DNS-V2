@@ -10,7 +10,7 @@ TEMP_MONGODB = "mongodb+srv://kuldiprathod2003:kuldiprathod2003@cluster0.wxqpikp
 
 
 if config.MONGO_DB_URI is None:
-    LOGGER(__name__).warning(
+    LOGGER(name).warning(
         "𝐍o 𝐌ONGO 𝐃B 𝐔RL 𝐅ound.. 𝐘our 𝐁ot 𝐖ill 𝐖ork 𝐎n 𝐕𝐈𝐏 𝐌𝐔𝐒𝐈𝐂 𝐃atabase"
     )
     temp_client = Client(
@@ -30,5 +30,5 @@ if config.MONGO_DB_URI is None:
 else:
     _mongo_async_ = _mongo_client_(config.MONGO_DB_URI)
     _mongo_sync_ = MongoClient(config.MONGO_DB_URI)
-    mongodb = _mongo_async_.Anon
-    pymongodb = _mongo_sync_.Anon
+    mongodb = _mongo_async_.VIPMUSIC
+    pymongodb = _mongo_sync_.VIPMUSIC
