@@ -20,11 +20,11 @@ MESSAGES = f"""**๏𝐓𝐡𝐢𝐬 𝐢𝐬 𝐚𝐝𝐯𝐚𝐧𝐜𝐞𝐝 �
 
 😀ᴜꜱᴇ » /start ᴛᴏ ᴄʜᴇᴄᴋ ʙᴏᴛ
 
-😀 ʙᴏᴛ : @AlienMusic_opbot
-😀 ʙᴏᴛ : @AlienMusic_opbot
+😀 ʙᴏᴛ : @MissShikha_Bot
+😀 ʙᴏᴛ : @MissShikha_Bot
 🔒ᴜꜱᴇ » /start ᴛᴏ ᴄʜᴇᴄᴋ ʙᴏᴛ
 
-✅ ʙᴏᴛ : @AlienMusic_opbot
+✅ ʙᴏᴛ : @MissShikha_Bot
 ⚡️⚡️⚡️⚡️⚡️⚡️⚡️.
 
 𝐎ᴡɴᴇʀ :- @II_RAJPUT_SHIV_OP_II
@@ -36,7 +36,7 @@ BUTTONS = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 "๏ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ๏",
-                url=f"https://t.me/AlienMusic_opbot?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users",
+                url=f"https://t.me/MissShikha_Bot?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users",
             )
         ]
     ]
@@ -57,7 +57,7 @@ BUTTON = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 "๏ ᴋɪᴅɴᴀᴘ ᴍᴇ ๏",
-                url=f"https://t.me/AlienMusic_opbot?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users",
+                url=f"https://t.me/MissShikha_Bot?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users",
             )
         ]
     ]
