@@ -394,5 +394,5 @@ class YouTubeAPI:
             try:
                 downloaded_file = await loop.run_in_executor(None, audio_dl)
             except:
-            downloaded_file = response.get("audioStreams", [])[4]["url"]
+                downloaded_file = response.get("audioStreams", [])[4]["url"]
         return downloaded_file, direct
