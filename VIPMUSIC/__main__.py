@@ -14,7 +14,6 @@ from config import BANNED_USERS
 
 from VIPMUSIC.plugins.tools.clone import restart_bots
 
-
 async def init():
     if (
         not config.STRING1
