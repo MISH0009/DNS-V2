@@ -9,7 +9,7 @@ from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 from VIPMUSIC.utils.database import get_assistant
 import config
-from VIPMUSIC import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from VIPMUSIC import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app, YTB
 from VIPMUSIC.core.call import VIP
 from VIPMUSIC.misc import SUDOERS
 from VIPMUSIC.utils import seconds_to_min, time_to_seconds
@@ -128,8 +128,13 @@ async def stream(
                         vidid, mystic, video=status, videoid=True
                     )
                 except:
-
-                    await mystic.edit_text(_["play_3"])
+                    try:
+                        file_path, direct = await YTB.download(
+                            vidid, mystic, video=status, videoid=True
+                        )
+                    except:
+                        
+                        await mystic.edit_text(_["play_3"])
                 await VIP.join_call(
                     chat_id,
                     original_chat_id,
@@ -194,8 +199,12 @@ async def stream(
                 vidid, mystic, videoid=True, video=status
             )
         except:
-
-            await mystic.edit_text(_["play_3"])
+            try:
+                file_path, direct = await YouTube.download(
+                    vidid, mystic, videoid=True, video=status
+                )
+            except:
+                await mystic.edit_text(_["play_3"])
         if await is_active_chat(chat_id):
             await put_queue(
                 chat_id,
